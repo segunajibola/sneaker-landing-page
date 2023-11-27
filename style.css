@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, #ff66b2, #66a3ff);
+    padding: 0px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.hero-shoe img {
+    width: 50vw;
+    height: 25rem;
+}
+
+.hero-section {
+    display: flex;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.hero-side {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.hero-side div span {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn1 {
+    background-color: blue;
+    color: white;
+}
+
+.btn2 {
+    background-color: pink;
+}
+
+.popular-section {
+    background-color: #ff66b2;
+}
+
+.popular-section h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.popular-shoe {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 10px;
+    font-size: 18px;
+    width: 80%;
+}
+
+.popular-shoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+.popular-shoes > div {
+    width: 33.3%;
+}
+
+.popular-shoes img {
+    width: 90%;
+    margin: auto;
+    height: 20rem;
+    border-radius: 15px;
+}
