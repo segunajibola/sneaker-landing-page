@@ -122,12 +122,30 @@ nav {
     padding: 10px 0; 
 }
 
-.trainig-pic-div {
+.trainig-pics {
     display: flex;
     justify-content: space-between;
 }
 
-.trainig-pic-div > div {
-    width: 50%;
+.trainig-pics-div1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 40%;
+}
+
+.trainig-pic1, .trainig-pic2 {
+    width: 80%;
+    height: 50%;
+    border-radius: 15px;
+}
+
+.trainig-pic3 {
+    width: 90%;
+    height: 100%;
+}
+
+.trainig-pics-div2 {
+    width: 60%;
 }
 
