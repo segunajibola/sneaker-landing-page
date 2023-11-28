@@ -108,3 +108,26 @@ nav {
     height: 20rem;
     border-radius: 15px;
 }
+
+.training-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 60px;
+}
+
+.training-intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0; 
+}
+
+.trainig-pic-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainig-pic-div > div {
+    width: 50%;
+}
+
