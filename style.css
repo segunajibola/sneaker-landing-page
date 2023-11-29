@@ -119,7 +119,7 @@ nav {
 .training-intro {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0; 
+    padding: 30px 0; 
 }
 
 .trainig-pics {
@@ -130,7 +130,7 @@ nav {
 .trainig-pics-div1 {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 35px;
     width: 40%;
 }
 
@@ -141,11 +141,103 @@ nav {
 }
 
 .trainig-pic3 {
-    width: 90%;
+    width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 
 .trainig-pics-div2 {
     width: 60%;
 }
 
+.featured {
+    display: flex;
+    padding: 80px 60px;
+}
+
+.featured-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 60%;
+}
+
+.flash-sale {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 60px;
+    text-align: center
+}
+
+.flash-sale div {
+    display: flex;
+    column-gap: 20px;
+}
+
+.flash-sale div img {
+    width: 33.3%;
+    border-radius: 15px;
+}
+
+.testimonials {
+    display: flex;
+    column-gap: 10px;
+    padding: 30px 60px;
+    justify-content: center;
+}
+
+.testimonials img {
+    width: 50%;
+}
+
+.testimonials-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 30px;
+}
+
+.testimonials-card > div {
+    display: flex;
+    column-gap: 10px;
+}
+
+.testimonials-card > div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials-name {
+    font-size: 15px;
+}
+
+.testimonials-title {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+.testimonials-card div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonials-card > p {
+}
+
+.testimonials-card > p::before,
+.testimonials-card > p::after {
+    content: '\201C'; /* Unicode character for left double quotation mark */
+    font-size: 2em; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+    display: inline-block; /* Ensures the quote appears on its own line */
+    margin-right: 5px; /* Adjust spacing between the quote and the content */
+}
+
+.testimonials-card > p::after {
+    content: '\201D'; /* Unicode character for right double quotation mark */
+    margin-left: 5px; /* Adjust spacing between the quote and the content */
+}
