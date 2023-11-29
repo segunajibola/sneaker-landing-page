@@ -211,33 +211,42 @@ nav {
 }
 
 .testimonials-name {
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .testimonials-title {
-    font-size: 10px;
-    margin-top: 2px;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 .testimonials-card div img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-}
-
-.testimonials-card > p {
 }
 
 .testimonials-card > p::before,
 .testimonials-card > p::after {
-    content: '\201C'; /* Unicode character for left double quotation mark */
-    font-size: 2em; /* Adjust the font size as needed */
-    color: #333; /* Adjust the color as needed */
-    display: inline-block; /* Ensures the quote appears on its own line */
-    margin-right: 5px; /* Adjust spacing between the quote and the content */
+    content: '\201C';
+    font-size: 4em;
+    color: #333;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .testimonials-card > p::after {
-    content: '\201D'; /* Unicode character for right double quotation mark */
-    margin-left: 5px; /* Adjust spacing between the quote and the content */
+    content: '\201D';
+    margin-left: 5px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 60px;
+    text-align: center;
+}
+
+.about-us > h2 {
+    font-size: 20px;
 }
