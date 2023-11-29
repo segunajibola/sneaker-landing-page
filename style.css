@@ -10,7 +10,7 @@ body {
 
 header {
     background: linear-gradient(to bottom, #ff66b2, #66a3ff);
-    padding: 0px 50px;
+    padding: 20px 50px;
 }
 
 nav {
@@ -26,7 +26,13 @@ nav {
     font-size: 20px;
 }
 
-.logo img {
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.top-nav img {
     width: 70px;
     height: 70px;
 }
@@ -40,6 +46,15 @@ nav {
 .profile-pic {
     border-radius: 50%;
     margin-left: 5px;
+}
+
+section {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
 }
 
 .hero-shoe img {
@@ -68,6 +83,7 @@ nav {
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
+    border: none;
 }
 
 .btn1 {
@@ -107,6 +123,11 @@ nav {
     margin: auto;
     height: 20rem;
     border-radius: 15px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.popular-shoes img:hover {
+    transform: scale(1.04)
 }
 
 .training-section {
@@ -184,7 +205,7 @@ nav {
 .testimonials {
     display: flex;
     column-gap: 10px;
-    padding: 30px 60px;
+    padding: 60px;
     justify-content: center;
 }
 
@@ -245,8 +266,75 @@ nav {
     row-gap: 20px;
     padding: 60px;
     text-align: center;
+    background-color: #66a3ff
 }
 
 .about-us > h2 {
     font-size: 20px;
+}
+
+.subscribe {
+    display: flex;
+    column-gap: 20px;
+    padding: 60px;
+}
+
+.subscribe > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 35px;
+}
+
+.subscribe h2 {
+    font-size: 50px;
+}
+
+.subscribe form {
+    display: flex;
+    margin: 0;
+}
+
+.subscribe input,
+.subscribe button {
+    margin: 0;
+    padding: 14px 50px;
+}
+
+.subscribe img {
+    width: 50%;
+}
+
+footer {
+    padding: 60px;
+    display: flex;
+    column-gap: 10px;
+    background-color:#ff66b2 ;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+footer > :nth-child(1) {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-right: 7px;
+}
+
+footer > :nth-child(n+2) {
+    width: 17.5%;
+}
+
+footer a {
+    padding-top: 8px;
+    text-decoration: none;
 }
