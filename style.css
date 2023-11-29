@@ -220,17 +220,21 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px 60px;
+    /* padding: 30px 60px; */
+    padding: 10px 30px;
     text-align: center
 }
 
 .flash-sale div {
     display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     column-gap: 20px;
 }
 
 .flash-sale div img {
-    width: 33.3%;
+    /* width: 33.3%; */
+    width: 100%;
     border-radius: 15px;
 }
 
