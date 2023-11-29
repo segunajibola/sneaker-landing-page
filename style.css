@@ -68,7 +68,8 @@ section {
     display: flex;
     flex-direction: column;
     /*  */
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    margin-top: 40px;
     padding-left: 20px;
 }
 
@@ -241,20 +242,23 @@ section {
 
 .testimonials {
     display: flex;
+    flex-direction: column;
     column-gap: 10px;
-    padding: 60px;
+    /* padding: 60px; */
+    padding: 30px;
+    text-align: center;
     justify-content: center;
 }
 
 .testimonials img {
-    width: 50%;
+    width: 100%;
 }
 
 .testimonials-card {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 .testimonials-card > div {
@@ -301,7 +305,8 @@ section {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 60px;
+    /* padding: 60px; */
+    padding: 30px;
     text-align: center;
     background-color: #66a3ff
 }
@@ -312,15 +317,18 @@ section {
 
 .subscribe {
     display: flex;
+    flex-direction: column;
     column-gap: 20px;
-    padding: 60px;
+    /* padding: 60px; */
+    padding: 30px;
 }
 
 .subscribe > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 35px;
+    /* row-gap: 35px; */
+    row-gap: 25px;
 }
 
 .subscribe h2 {
@@ -335,16 +343,21 @@ section {
 .subscribe input,
 .subscribe button {
     margin: 0;
-    padding: 14px 50px;
+    /* padding: 14px 50px; */
+    padding: 10px 25px;
 }
 
 .subscribe img {
     width: 50%;
+    width: 100%;
+    margin-top: 20px;
 }
 
 footer {
-    padding: 60px;
+    /* padding: 60px; */
+    padding: 30px;
     display: flex;
+    flex-direction: column;
     column-gap: 10px;
     background-color:#ff66b2 ;
 }
