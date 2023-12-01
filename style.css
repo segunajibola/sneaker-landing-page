@@ -11,14 +11,14 @@ body {
 
 header {
   background: linear-gradient(to bottom, #ff66b2, #66a3ff);
-  padding: 20px 50px;
+  padding: 20px 30px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 5px;
+  padding: 2px;
 }
 
 .nav-items a {
@@ -28,26 +28,37 @@ nav {
   display: none;
 }
 
-.top-nav {
+.top-nav-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.top-nav img {
-  width: 70px;
-  height: 70px;
+.top-nav-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger {
+  width: 20px;
+  height: 20px;
+}
+
+.hamburger img {
+  color: black;
 }
 
 .icons img {
-  width: 30px;
-  height: 30px;
-  color: red;
+  width: 20px;
+  height: 20px;
+  display: none;
+  /* background-color: green; */
 }
 
 .profile-pic {
   border-radius: 50%;
-  margin-left: 5px;
+  margin-left: 4px;
+  display: none;
 }
 
 section {
@@ -59,9 +70,16 @@ section {
   opacity: 1;
 }
 
+.hero-shoe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-shoe img {
+  margin: 10px auto;
   width: 50vw;
-  height: 15rem;
+  height: 18rem;
 }
 
 .hero-section {
