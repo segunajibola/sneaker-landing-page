@@ -435,12 +435,28 @@ footer a {
   }
 
   .popular-shoes img {
-    height: 20rem;
+    height: 25rem;
   }
 
   .popular-shoe-text {
     font-size: 22px;
     width: 90%;
+  }
+
+  .training-intro > h2 {
+    font-size: 50px;
+  }
+
+  .trainig-pics-div1 p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .featured-div span {
+    font-size: 18px;
+  }
+
+  .featured-div p, .flash-sale p {
+    font-size: 20px;
   }
 }
 
