@@ -476,6 +476,9 @@ footer a {
 }
 
 @media (min-width: 1025px) {
+  .hero-section {
+    flex-direction: row;
+  }
   
 }
 
