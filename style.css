@@ -301,10 +301,6 @@ section {
   background-color: #66a3ff;
 }
 
-.about-us > h2 {
-  font-size: 20px;
-}
-
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -319,8 +315,7 @@ section {
   row-gap: 25px;
 }
 
-.subscribe h2 {
-  font-size: 20px;
+.subscribe h1 {
   text-align: center;
 }
 
@@ -434,6 +429,10 @@ footer a {
     display: inline-flex;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   .popular-shoes img {
     height: 25rem;
   }
@@ -455,12 +454,29 @@ footer a {
     font-size: 18px;
   }
 
-  .featured-div p, .flash-sale p {
+  .featured-div p, .flash-sale p, .testimonials-card p, .about-us p, .subscribe p {
     font-size: 20px;
+  }
+
+  .testimonials-card div {
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    padding: 5px;
+  }
+
+  .subscribe input, .subscribe button {
+  margin: 0;
+  padding: 10px 60px;
+  }
+
+  footer p {
+    font-size: 18px;
   }
 }
 
 @media (min-width: 1025px) {
+  
 }
 
 @media (min-width: 1281px) {
