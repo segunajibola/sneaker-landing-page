@@ -165,13 +165,13 @@ section {
   font-size: 20px;
 }
 
-.trainig-pics {
+.training-pics {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.trainig-pics-div1 {
+.training-pics-div1 {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
@@ -233,11 +233,14 @@ section {
 }
 
 .testimonials {
+  padding: 30px;
+  text-align: center;
+}
+
+.testimonials > div {
   display: flex;
   flex-direction: column;
   column-gap: 10px;
-  padding: 30px;
-  text-align: center;
   justify-content: center;
 }
 
@@ -254,7 +257,14 @@ section {
 
 .testimonials-card > div {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   column-gap: 10px;
+}
+
+.testimonials > div > img {
+  border-radius: 15px;
 }
 
 .testimonials-card > div div {
@@ -302,21 +312,16 @@ section {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  column-gap: 20px;
   padding: 20px;
+  text-align: center;
 }
 
-.subscribe > div {
+.subscribe-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10px;
   row-gap: 25px;
-}
-
-.subscribe h1 {
-  text-align: center;
 }
 
 .subscribe form {
@@ -332,10 +337,11 @@ section {
   padding: 10px 25px;
 }
 
-.subscribe img {
+.subscribe > div img {
   width: 50%;
   width: 100%;
   margin-top: 20px;
+  border-radius: 15px;
 }
 
 footer {
@@ -446,7 +452,7 @@ footer a {
     font-size: 50px;
   }
 
-  .trainig-pics-div1 p:nth-child(2) {
+  .training-pics-div1 p:nth-child(2) {
     font-size: 20px;
   }
 
@@ -479,7 +485,106 @@ footer a {
   .hero-section {
     flex-direction: row;
   }
+
+  .hero-side {
+    width: 50%;
+  }
+
+  .hero-side h1 {
+    font-size: 20px;
+  }
+
+  .hero-shoe {
+    margin-left: 0px;
+    width: 50%;
+  }
   
+  .hero-shoe img {
+    width: 100%;
+    height: 16rem;
+  }
+
+  .popular-shoes {
+    flex-direction: row;
+  }
+
+  .popular-shoes > div {
+    width: 33.3%;
+  }
+
+  .popular-shoes img {
+    width: 90%;
+    height: 16rem;
+    display: flex;
+  }
+
+  .popular-shoe-text {
+    font-size: 18px;
+    width: 80%;
+  }
+  
+  .training-pics {
+    flex-direction: row;
+    column-gap: 8px;
+  }
+
+  .training-pics-div1 img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .training-pics-div1 {
+    width: 40%;
+  }
+
+  .training-pics-div2 {
+    width: 60%;
+  }
+
+  .training-pic3 {
+    display: inline-block;
+    object-fit: fill;
+    object-position: center;
+  }
+
+  .featured-div h1, .flash-sale h1,
+  .testimonials h1, .about-us h1, .subscribe h1  {
+    font-size: 26px;
+  }
+
+  .flash-sale div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flash-sale div img {
+    width: 32%;
+    height: 100%;
+    border-radius: 15px;
+  }
+
+  .testimonials > div {
+    flex-direction: row;
+    margin: 15px 0;
+  }
+
+  .testimonials-card {
+    width: 50%;
+  }
+
+  .testimonials > div > img {
+    width: 50%;
+  }
+
+  .about-us {
+    padding: 15vh 30px;
+  }
+
+  .subscribe > div {
+    display: flex;
+  }
 }
 
 @media (min-width: 1281px) {
