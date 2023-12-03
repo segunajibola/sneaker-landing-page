@@ -22,9 +22,6 @@ nav {
 }
 
 .nav-items a {
-  text-decoration: none;
-  padding-right: 5px;
-  font-size: 20px;
   display: none;
 }
 
@@ -136,7 +133,6 @@ section {
 
 .popular-shoes img {
   width: 100%;
-  margin: auto;
   height: 16rem;
   border-radius: 15px;
   transition: transform 0.1s ease-in-out;
@@ -408,9 +404,44 @@ footer a {
     width: 70vw;
     height: 16rem;
   }
+
+  .popular-shoes img {
+    margin: auto;
+    height: 20rem;
+  }
+
+  .subscribe form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .subscribe input,
+  .subscribe button {
+  margin: 0;
+  padding: 10px 35px;
+  }
 }
 
 @media (min-width: 801px) {
+  .nav-items a {
+    text-decoration: none;
+    padding-right: 3px;
+    font-size: 20px;
+    display: inline-flex;
+  }
+
+  .search, .shopping-cart {
+    display: inline-flex;
+  }
+
+  .popular-shoes img {
+    height: 20rem;
+  }
+
+  .popular-shoe-text {
+    font-size: 22px;
+    width: 90%;
+  }
 }
 
 @media (min-width: 1025px) {
