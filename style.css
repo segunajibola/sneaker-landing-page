@@ -312,6 +312,10 @@ section {
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
   padding: 20px;
   text-align: center;
 }
@@ -320,7 +324,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10px;
   row-gap: 25px;
 }
 
@@ -328,20 +331,17 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-  margin: 0;
+  margin: 10px;
 }
 
 .subscribe input,
 .subscribe button {
-  margin: 0;
   padding: 10px 25px;
 }
 
-.subscribe > div img {
-  width: 50%;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 15px;
+.subscribe img {
+  margin-top: 5px;
+  border-radius: 10px;
 }
 
 footer {
