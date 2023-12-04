@@ -130,6 +130,7 @@ section {
 .hero-shoe img {
   width: 90vw;
   height: 16rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .popular-section h1 {

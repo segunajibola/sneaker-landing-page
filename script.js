@@ -1,14 +1,24 @@
+const heroShoeImg = document.getElementById("hero-shoe-img")
+
+document.addEventListener("scroll", function scrollHeroShoeImg() {
+
+  let elementTop = heroShoeImg.getBoundingClientRect().top;
+  // console.log("elementTop:", elementTop);
+  let rotation = Math.max(20, 600 - elementTop);
+  heroShoeImg.style.transform = `rotateY(${rotation}deg)`;
+})
+
 document.addEventListener("DOMContentLoaded", function () {
-  var sections = document.querySelectorAll("section");
-  var lastScrollTop = 0;
+  let sections = document.querySelectorAll("section");
+  let lastScrollTop = 0;
+  const currentScrollTop = window.scrollY;
 
   function checkFade() {
-    var currentScrollTop = window.scrollY;
 
     if (currentScrollTop > lastScrollTop) {
       // Scrolling down
       sections.forEach(function (section) {
-        var elementTop = section.getBoundingClientRect().top;
+        let elementTop = section.getBoundingClientRect().top;
 
         if (elementTop < window.innerHeight) {
           section.classList.add("fade-in");
@@ -17,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       // Scrolling up
       sections.forEach(function (section) {
-        var elementTop = section.getBoundingClientRect().top;
+        let elementTop = section.getBoundingClientRect().top;
 
         if (elementTop < window.innerHeight / 2) {
           section.classList.add("fade-in");
