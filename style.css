@@ -194,7 +194,8 @@ section {
 .featured {
   display: flex;
   flex-direction: column;
-  padding: 80px 30px;
+  padding: 15px 30px;
+  background-color: #ff66b2;
 }
 
 .featured-div {
@@ -215,7 +216,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px 30px;
+  padding: 15px 30px;
   text-align: center;
 }
 
@@ -223,7 +224,6 @@ section {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  column-gap: 20px;
 }
 
 .flash-sale div img {
@@ -339,6 +339,10 @@ section {
   padding: 10px 25px;
 }
 
+.subscribe button {
+  border-radius: 15px;
+}
+
 .subscribe img {
   margin-top: 5px;
   border-radius: 10px;
@@ -363,16 +367,11 @@ footer img {
 }
 
 footer > :nth-child(1) {
-  /* width: 30%; */
   width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   padding-right: 7px;
-}
-
-footer > :nth-child(n + 2) {
-  /* width: 17.5%; */
 }
 
 footer a {
@@ -411,6 +410,10 @@ footer a {
     height: 20rem;
   }
 
+  .subscribe-side {
+    row-gap: 15px;
+  }
+
   .subscribe form {
     flex-direction: row;
     justify-content: center;
@@ -419,7 +422,12 @@ footer a {
   .subscribe input,
   .subscribe button {
   margin: 0;
-  padding: 10px 35px;
+  padding: 10px 45px;
+  }
+
+  .subscribe button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
@@ -471,7 +479,8 @@ footer a {
     padding: 5px;
   }
 
-  .subscribe input, .subscribe button {
+  .subscribe input,
+  .subscribe button {
   margin: 0;
   padding: 10px 60px;
   }
@@ -504,6 +513,10 @@ footer a {
     height: 16rem;
   }
 
+  .popular-section {
+    padding: 50px 30px;
+  }
+
   .popular-shoes {
     flex-direction: row;
   }
@@ -521,6 +534,10 @@ footer a {
   .popular-shoe-text {
     font-size: 18px;
     width: 80%;
+  }
+
+  .training-section {
+    padding: 50px 30px;
   }
   
   .training-pics {
@@ -549,7 +566,15 @@ footer a {
 
   .featured-div h1, .flash-sale h1,
   .testimonials h1, .about-us h1, .subscribe h1  {
-    font-size: 26px;
+    font-size: 30px;
+  }
+
+  .featured {
+    padding: 50px 40px;
+  }
+
+  .flash-sale {
+    padding: 50px 30px;
   }
 
   .flash-sale div {
@@ -557,12 +582,18 @@ footer a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 20px;
   }
 
   .flash-sale div img {
     width: 32%;
     height: 100%;
     border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .testimonials {
+    padding: 50px 30px;
   }
 
   .testimonials > div {
@@ -576,14 +607,36 @@ footer a {
 
   .testimonials > div > img {
     width: 50%;
+    object-fit: cover;
   }
 
   .about-us {
     padding: 15vh 30px;
   }
 
-  .subscribe > div {
-    display: flex;
+  .subscribe {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .subscribe img {
+    width: 50%;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+  
+  footer > :nth-child(1) {
+    width: 30%;
+  }
+
+  footer > :nth-child(n + 2) {
+    width: 17.5%;
+  }
+
+  footer h3 {
+    padding-bottom: 20px;
   }
 }
 
