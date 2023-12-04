@@ -31,9 +31,16 @@ nav {
   align-items: center;
 }
 
+.top-nav span {
+  font-style: italic;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  margin-left: -25px;
+}
+
 .top-nav img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 
 .icons img {
@@ -63,6 +70,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
+  row-gap: 10px;
 }
 
 .hero-side {
@@ -397,12 +405,13 @@ footer a {
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    margin-left: -10px;
+    margin-left: 20px;
+    height: 55vh;
   } 
 
   .hero-shoe img {
     width: 70vw;
-    height: 16rem;
+    height: 25rem;
   }
 
   .popular-shoes img {
@@ -432,11 +441,30 @@ footer a {
 }
 
 @media (min-width: 801px) {
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
   .nav-items a {
+    display: flex;
     text-decoration: none;
-    padding-right: 3px;
-    font-size: 20px;
-    display: inline-flex;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-items a:hover {
+    background-color: #66a3ff;
+    border: #66a3ff;
+    transform: scale(1.3);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
   }
 
   .search, .shopping-cart {
@@ -445,6 +473,42 @@ footer a {
 
   .hamburger {
     display: none;
+  }
+
+  #typewriter {
+    font-size: 30px;
+  }
+
+  .hero-side > p {
+    font-size: 20px;
+  }
+
+  .her o-shoe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    margin-left: 20px;
+    height: 55vh;
+  } 
+
+  .hero- shoe img {
+    width: 70vw;
+    height: 25rem;
+  }
+
+  .hero-shoe {
+    background-color: red;
+    height: 60vh;
+  }
+
+  .hero-sh oe img {
+    border: 2px solid white;
+    width: 200px;
+    height: 150%;
+    margin: 0;
+    background-color: aqua;
+    object-fit: cover;
   }
 
   .popular-shoes img {
@@ -506,11 +570,13 @@ footer a {
   .hero-shoe {
     margin-left: 0px;
     width: 50%;
+    display: block;
+    height: 80vh;
   }
   
   .hero-shoe img {
     width: 100%;
-    height: 16rem;
+    height: 100%;
   }
 
   .popular-section {
@@ -638,7 +704,4 @@ footer a {
   footer h3 {
     padding-bottom: 20px;
   }
-}
-
-@media (min-width: 1281px) {
 }
