@@ -12,7 +12,7 @@ document.addEventListener("scroll", function scrollHeroShoeImg() {
 })
 
 selectElement.addEventListener('change', function() {
-  let selectedSize = selectElement.value;
+  selectedSize = selectElement.value;
 });
 
 function sendMessage(name, selectedSize = undefined) {
