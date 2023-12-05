@@ -93,14 +93,13 @@ section {
   font-size: 20px;
   border-radius: 5px;
   border: none;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
 }
 
 .btn1 {
   background-color: white;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .btn1:hover {
