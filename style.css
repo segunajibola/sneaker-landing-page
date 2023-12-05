@@ -613,8 +613,12 @@ footer a {
   .testimonials-card div {
     justify-content: center;
     align-items: center;
-    column-gap: 2px;
     padding: 5px;
+  }
+
+  .navigation-buttons {
+    width: 75%;
+    margin: 20px auto;
   }
 
   .subscribe input,
@@ -749,7 +753,7 @@ footer a {
   .testimonials > div > img {
     width: 50%;
     object-fit: cover;
-  }
+  } 
 
   .about-us {
     padding: 15vh 30px;

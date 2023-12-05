@@ -97,7 +97,7 @@ const testimonialsData = [
     name: "John Doe",
     title: "CEO, Company XYZ",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut quam vel risus faucibus facilisis vitae id lorem.",
+      "Lddorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut quam vel risus faucibus facilisis vitae id lorem.",
     image: "images/profile-pic.jpg",
   },
   {
@@ -158,13 +158,10 @@ function updateIndicators(activeIndex) {
   }
 }
 
-// Set up automatic swiping every 5 seconds
 const intervalId = setInterval(autoSwipeRight, 5000);
 
-// Initial display
 displayTestimonial(currentTestimonialIndex);
 
-// Stop the interval when the user interacts with the navigation buttons
 document
   .querySelector(".navigation-buttons")
   .addEventListener("click", function () {
