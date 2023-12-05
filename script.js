@@ -17,15 +17,16 @@ selectElement.addEventListener('change', function() {
 
 function sendMessage(name, selectedSize = undefined) {
   let phoneNumber = '+2348105729893';
-  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, of size ${selectedSize}.`);
+  let message
 
   if (selectedSize === undefined) {
-    let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(whatsappLink, '_blank');
+    message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe.`);
   } else {
-    let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+    message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, of size ${selectedSize}.`);
+  } 
+  
+  let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappLink, '_blank');
-  }  
 }
 
 heroButton.addEventListener('click', function() {
