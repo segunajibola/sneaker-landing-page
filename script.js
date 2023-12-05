@@ -1,18 +1,23 @@
 const heroShoeImg = document.getElementById("hero-shoe-img")
 const selectElement = document.getElementById('sizeSelect');
 const heroButton = document.getElementById('heroButton');
+let sections = document.querySelectorAll("section");
+let lastScrollTop = 0;
+const currentScrollTop = window.scrollY;
 let selectedSize = ""
 
 document.addEventListener("scroll", function scrollHeroShoeImg() {
-
   let elementTop = heroShoeImg.getBoundingClientRect().top;
-  // console.log("elementTop:", elementTop);
   let rotation = Math.max(20, 600 - elementTop);
   heroShoeImg.style.transform = `rotateY(${rotation}deg)`;
 })
 
 selectElement.addEventListener('change', function() {
   selectedSize = selectElement.value;
+});
+
+heroButton.addEventListener('click', function() {
+  sendMessage("Nike Air Max Plus", selectedSize);
 });
 
 function sendMessage(name, selectedSize = undefined) {
@@ -28,15 +33,6 @@ function sendMessage(name, selectedSize = undefined) {
   let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappLink, '_blank');
 }
-
-heroButton.addEventListener('click', function() {
-  sendMessage("Nike Air Max Plus", selectedSize);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let sections = document.querySelectorAll("section");
-  let lastScrollTop = 0;
-  const currentScrollTop = window.scrollY;
 
   function checkFade() {
 
@@ -91,4 +87,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   type();
-});
