@@ -11,11 +11,7 @@ document.addEventListener("scroll", function scrollHeroShoeImg() {
 function sendMessage(name) {
   let phoneNumber = '+2348105729893';
   let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe.`);
-  
-  // Create the WhatsApp chat link
-  let whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + message;
-
-  // Open the link in a new tab
+  let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(whatsappLink, '_blank');
 }
 
