@@ -1,4 +1,6 @@
 const heroShoeImg = document.getElementById("hero-shoe-img")
+const selectElement = document.getElementById('sizeSelect');
+let selectedSize = ""
 
 document.addEventListener("scroll", function scrollHeroShoeImg() {
 
@@ -8,12 +10,22 @@ document.addEventListener("scroll", function scrollHeroShoeImg() {
   heroShoeImg.style.transform = `rotateY(${rotation}deg)`;
 })
 
-function sendMessage(name) {
+function sendMessage(name, size = undefined) {
   let phoneNumber = '+2348105729893';
-  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe.`);
-  let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
-  window.open(whatsappLink, '_blank');
+  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, with size ${size}.`);
+
+  if (size === undefined) {
+    let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappLink, '_blank');
+  } else {
+    let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappLink, '_blank');
+  }  
 }
+
+selectElement.addEventListener('change', function() {
+    let selectedSize = selectElement.value;
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   let sections = document.querySelectorAll("section");
@@ -55,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     checkFade();
   });
 
-  const text = ["Nike Air Max Plus"];
+  const text = ["Urban Soles"];
   let charIndex = 0;
 
   function type() {

@@ -96,16 +96,16 @@ section {
 }
 
 .btn1 {
-  background-color: rgb(88, 88, 177);
-  color: white;
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn1:hover {
-  background-color: #0865f0;
-  transition: background-color 0.3s ease-in-out;
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
-
 }
 
 .btn2 {
@@ -117,6 +117,12 @@ section {
   transition: background-color 0.3s ease-in-out;
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+}
+
+.hero-whatsapp {
+  width: 20px;
+  height: 20px;
+  color: green;
 }
 
 .hero-shoe {
