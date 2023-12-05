@@ -1,5 +1,6 @@
 const heroShoeImg = document.getElementById("hero-shoe-img")
 const selectElement = document.getElementById('sizeSelect');
+const heroButton = document.getElementById('heroButton');
 let selectedSize = ""
 
 document.addEventListener("scroll", function scrollHeroShoeImg() {
@@ -9,6 +10,10 @@ document.addEventListener("scroll", function scrollHeroShoeImg() {
   let rotation = Math.max(20, 600 - elementTop);
   heroShoeImg.style.transform = `rotateY(${rotation}deg)`;
 })
+
+selectElement.addEventListener('change', function() {
+  let selectedSize = selectElement.value;
+});
 
 function sendMessage(name, size = undefined) {
   let phoneNumber = '+2348105729893';
@@ -23,8 +28,8 @@ function sendMessage(name, size = undefined) {
   }  
 }
 
-selectElement.addEventListener('change', function() {
-    let selectedSize = selectElement.value;
+heroButton.addEventListener('click', function() {
+  sendMessage("Hero shoe", selectedSize);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
