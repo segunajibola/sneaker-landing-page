@@ -15,11 +15,11 @@ selectElement.addEventListener('change', function() {
   let selectedSize = selectElement.value;
 });
 
-function sendMessage(name, size = undefined) {
+function sendMessage(name, selectedSize = undefined) {
   let phoneNumber = '+2348105729893';
-  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, with size ${size}.`);
+  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, with size ${selectedSize}.`);
 
-  if (size === undefined) {
+  if (selectedSize === undefined) {
     let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappLink, '_blank');
   } else {
