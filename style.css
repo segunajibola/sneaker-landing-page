@@ -746,10 +746,6 @@ footer a {
     margin: 15px 0;
   }
 
-  .testimonials-card {
-    width: 50%;
-  }
-
   .testimonials > div > img {
     width: 50%;
     object-fit: cover;
