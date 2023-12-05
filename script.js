@@ -8,6 +8,17 @@ document.addEventListener("scroll", function scrollHeroShoeImg() {
   heroShoeImg.style.transform = `rotateY(${rotation}deg)`;
 })
 
+function sendMessage(name) {
+  var phoneNumber = '+2348105729893';
+  var message = encodeURIComponent('I want to buy ' + name + ' shoe');
+  
+  // Create the WhatsApp chat link
+  var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + message;
+
+  // Open the link in a new tab
+  window.open(whatsappLink, '_blank');
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   let sections = document.querySelectorAll("section");
   let lastScrollTop = 0;
