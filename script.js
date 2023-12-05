@@ -17,7 +17,7 @@ selectElement.addEventListener('change', function() {
 
 function sendMessage(name, selectedSize = undefined) {
   let phoneNumber = '+2348105729893';
-  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, with size ${selectedSize}.`);
+  let message = encodeURIComponent(`Hello Urban Shoes 👋, I want to buy ${name} shoe, of size ${selectedSize}.`);
 
   if (selectedSize === undefined) {
     let whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
@@ -29,7 +29,7 @@ function sendMessage(name, selectedSize = undefined) {
 }
 
 heroButton.addEventListener('click', function() {
-  sendMessage("Hero shoe", selectedSize);
+  sendMessage("Nike Air Max Plus", selectedSize);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
