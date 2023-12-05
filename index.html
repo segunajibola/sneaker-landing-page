@@ -9,15 +9,15 @@
   <body>
     <header>
       <nav>
-        <div class="top-nav">
+        <a href="index.html" class="top-nav">
           <img src="images/logo.png" alt="" srcset="" />
           <span>Urban Soles</span>
-        </div>
+        </a>
         <div class="nav-items">
           <a href="index.html">Home</a>
-          <a href="">Men</a>
-          <a href="">Women</a>
-          <a href="">Kids</a>
+          <a href="men.html">Men</a>
+          <a href="women.html">Women</a>
+          <a href="kids.html">Kids</a>
           <a href="#about-us">About</a>
         </div>
         <div class="icons">
@@ -191,7 +191,7 @@
     <section class="testimonials">
       <h1>Testimonials</h1>
       <div>
-        <div class="testimonials-card">
+        <div class="testimonials-card" id="testimonials-card">
           <div>
             <img src="images/profile-pic.jpg" alt="" />
             <div>
@@ -206,6 +206,13 @@
             dignissimos optio at blanditiis?
           </p>
         </div>
+
+        <div class="navigation-buttons">
+          <button onclick="prevTestimonial()">Swipe Left</button>
+          <button onclick="nextTestimonial()">Swipe Right</button>
+        </div>
+
+        <div class="indicators" id="indicators"></div>
         <img src="images/shoe2.jpg" alt="" />
       </div>
     </section>

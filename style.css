@@ -33,7 +33,7 @@ nav {
 
 .top-nav span {
   font-style: italic;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: larger;
   margin-left: -25px;
 }
@@ -48,7 +48,8 @@ nav {
   height: 30px;
 }
 
-.search, .shopping-cart {
+.search,
+.shopping-cart {
   display: none;
 }
 
@@ -289,7 +290,7 @@ section {
   padding: 20px 30px;
 }
 
-.testimonials-card > div {
+.testimonials-card > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,6 +337,41 @@ section {
   margin-left: 5px;
 }
 
+.navigation-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-buttons button {
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #cf76a3;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-indicator {
+  background-color: #333;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;
@@ -374,7 +410,7 @@ section {
 }
 
 .subscribe input {
-  border: .2px solid black;
+  border: 0.2px solid black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   text-align: center;
@@ -436,7 +472,6 @@ footer a {
   text-decoration: none;
 }
 
-
 @media (min-width: 400px) {
   .hero-side h1 {
     font-size: 20px;
@@ -456,7 +491,7 @@ footer a {
     margin: 10px auto;
     margin-left: 20px;
     height: 55vh;
-  } 
+  }
 
   .hero-shoe img {
     width: 70vw;
@@ -479,8 +514,8 @@ footer a {
 
   .subscribe input,
   .subscribe button {
-  margin: 0;
-  padding: 10px 45px;
+    margin: 0;
+    padding: 10px 45px;
   }
 
   .subscribe input {
@@ -525,7 +560,8 @@ footer a {
     border-bottom-right-radius: 0;
   }
 
-  .search, .shopping-cart {
+  .search,
+  .shopping-cart {
     display: inline-flex;
   }
 
@@ -566,7 +602,11 @@ footer a {
     font-size: 18px;
   }
 
-  .featured-div p, .flash-sale p, .testimonials-card p, .about-us p, .subscribe p {
+  .featured-div p,
+  .flash-sale p,
+  .testimonials-card p,
+  .about-us p,
+  .subscribe p {
     font-size: 20px;
   }
 
@@ -579,8 +619,8 @@ footer a {
 
   .subscribe input,
   .subscribe button {
-  margin: 0;
-  padding: 10px 60px;
+    margin: 0;
+    padding: 10px 60px;
   }
 
   footer p {
@@ -605,7 +645,7 @@ footer a {
     margin-left: 0;
     height: 70vh;
   }
-  
+
   .hero-shoe img {
     width: 50vw;
     height: 100%;
@@ -637,7 +677,7 @@ footer a {
   .training-section {
     padding: 50px 30px;
   }
-  
+
   .training-pics {
     flex-direction: row;
     column-gap: 8px;
@@ -662,8 +702,11 @@ footer a {
     object-position: center;
   }
 
-  .featured-div h1, .flash-sale h1,
-  .testimonials h1, .about-us h1, .subscribe h1  {
+  .featured-div h1,
+  .flash-sale h1,
+  .testimonials h1,
+  .about-us h1,
+  .subscribe h1 {
     font-size: 30px;
   }
 
@@ -724,7 +767,7 @@ footer a {
   footer {
     flex-direction: row;
   }
-  
+
   footer > :nth-child(1) {
     width: 30%;
   }
