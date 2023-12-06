@@ -21,7 +21,7 @@ heroButton.addEventListener("click", function () {
 });
 
 function sendMessage(name, selectedSize = undefined) {
-  let phoneNumber = "+2348105729893";
+  let phoneNumber = "+2348086907425";
   let message;
 
   if (selectedSize === undefined) {
