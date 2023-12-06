@@ -133,10 +133,14 @@ section {
   margin-left: -50px;
 }
 
-.hero-shoe img {
+.hero-shoe > img {
   width: 90vw;
   height: 16rem;
   transition: transform 0.3s ease-in-out;
+}
+
+.hero-side > button {
+  display: none;
 }
 
 .popular-section h1 {
@@ -493,7 +497,7 @@ footer a {
     height: 55vh;
   }
 
-  .hero-shoe img {
+  .hero-shoe > img {
     width: 70vw;
     height: 25rem;
   }
@@ -637,6 +641,15 @@ footer a {
     flex-direction: row;
   }
 
+  .hero-section > button {
+    display: none;
+  }
+
+  .hero-side > button {
+    display: block;
+    margin: auto 0;
+  }
+
   .hero-side {
     width: 50%;
   }
@@ -650,7 +663,7 @@ footer a {
     height: 70vh;
   }
 
-  .hero-shoe img {
+  .hero-shoe > img {
     width: 50vw;
     height: 100%;
   }
