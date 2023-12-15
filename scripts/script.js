@@ -1,7 +1,6 @@
 const heroShoeImg = document.getElementById("hero-shoe-img");
 const selectElement = document.getElementById("sizeSelect");
 const heroButton = document.getElementById("heroButton");
-const hamburger = document.getElementById("hamburger");
 const mobileMenuEl = document.getElementById("mobile-menu");
 let sections = document.querySelectorAll("section");
 let lastScrollTop = 0;

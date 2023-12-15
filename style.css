@@ -25,7 +25,7 @@ nav {
   right: 0;
   background-color: #66a3ff;
   z-index: 10;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 2px 40px 0 rgba(0, 0, 0, .5);
 }
 
 .nav-items a {
@@ -48,13 +48,6 @@ nav {
   padding: 7px;
   font-size: 18px;
   text-decoration: none;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 6px 0;
 }
 
 .top-nav {
@@ -96,6 +89,13 @@ nav {
   margin-right: 5px;
 }
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+
 section {
   opacity: 0.2;
   transition: opacity 0.7s ease-in-out;
@@ -109,7 +109,7 @@ section {
   display: flex;
   flex-direction: column;
   padding: 10px 7px;
-  padding-top: 80px;
+  padding-top: 0px;
   row-gap: 10px;
 }
 
