@@ -32,15 +32,31 @@
             alt=""
           />
           <img class="profile-pic" src="images/profile-pic.jpg" alt="" />
-          <img
+          <!-- <img
             class="hamburger"
+            id="hamburger"
+            onclick="mobileMenu()"
             src="https://img.icons8.com/ios/icon/8113/menu"
             alt=""
             srcset=""
-          />
+          /> -->
+          <span class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </span>
         </div>
       </nav>
-      <section class="hero-section">
+
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="#about-us">About</a>
+      </div>
+
+      <section class="hero-section" id="hero-section">
         <div class="hero-side">
           <h1 id="typewriter"></h1>
           <p>

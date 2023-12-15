@@ -1,10 +1,24 @@
 const heroShoeImg = document.getElementById("hero-shoe-img");
 const selectElement = document.getElementById("sizeSelect");
 const heroButton = document.getElementById("heroButton");
+const hamburger = document.getElementById("hamburger");
+const mobileMenuEl = document.getElementById("mobile-menu");
 let sections = document.querySelectorAll("section");
 let lastScrollTop = 0;
 const currentScrollTop = window.scrollY;
 let selectedSize = "";
+
+function toggleMenu() {
+  mobileMenuEl.classList.toggle("hidden");
+
+  const heroSection = document.getElementById("hero-section");
+
+  if (mobileMenuEl.classList.contains("hidden")) {
+    heroSection.style.paddingTop = "80px";
+  } else {
+    heroSection.style.paddingTop = "40px";
+  }
+}
 
 document.addEventListener("scroll", function scrollHeroShoeImg() {
   let elementTop = heroShoeImg.getBoundingClientRect().top;
